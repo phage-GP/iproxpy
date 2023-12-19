@@ -30,12 +30,12 @@ file_url_list = iproxpy.get_file_urls(URL,identifier=identifier)
 ```
 
 ```python
-iproxpy.download(file_url_list[0],engine = 'aspera',path='~/')
+iproxpy.download(file_url_list[0],engine = 'wget',path='~/')
 ```
 
 ```python
 iproxpy.batch_download(file_url_list[:4],
-                engine = 'aspera',
+                engine = 'wget',
                 path='~/',
                 processes_num=4)
 ```
